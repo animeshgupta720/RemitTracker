@@ -184,23 +184,23 @@ def main():
                 variables = {
                     "Fx Rate": {
                         "type": "numeric",
-                        "value": fx_rate
+                        "value": fx_rate if fx_rate != 0 else ""
                     },
                     "Instarem": {
                         "type": "numeric",
-                        "value": rate_instarem
+                        "value": rate_instarem if rate_instarem != 0 else ""
                     },
                     "Remitly": {
                         "type": "numeric",
-                        "value": rate_remitly
+                        "value": rate_remitly if rate_remitly != 0 else ""
                     },
                     "Xoom": {
                         "type": "numeric",
-                        "value": rate_xoom
+                        "value": rate_xoom if rate_xoom != 0 else ""
                     },
                     "Ria": {
                         "type": "numeric",
-                        "value": rate_ria
+                        "value": rate_ria if rate_ria != 0 else ""
                     }
                 }
                 device.declare(variables)
